@@ -1,0 +1,7 @@
+<h3>Trending Subjects</h3>
+
+<ul>
+  <li *ngFor="let subject of trendingSubjects" (click)="navigateToSubject(subject)">
+    {{ subject }}
+  </li>
+</ul>

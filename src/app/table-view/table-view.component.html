@@ -1,0 +1,15 @@
+<table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of data">
+        <td>{{ book.title }}</td>
+        <td>{{ book.author_name ? book.author_name.join(', ') : '-' }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
